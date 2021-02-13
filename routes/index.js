@@ -1,8 +1,9 @@
 const {Router, response} = require('express');
 const axios = require('axios');
+var cors = require('cors')
 const router = Router();
 
-router.post('/login',async(req, res, next) => {
+router.post('/login', cors(),async(req, res, next) => {
     try{
     const response = await axios.post('http://ec2-52-37-61-68.us-west-2.compute.amazonaws.com:1234/api/v1/challenge/login',
     {user: req.body.email, password: req.body.password}
