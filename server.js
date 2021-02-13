@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(
   cors({
     credentials: false,
-    origin: ['http://localhost:3003', 'http://localhost:5000', 'http://localhost:3000'],
+    origin: ['http://localhost:3003', 'http://localhost:5000', 'http://localhost:3000', 'https://zen-jones-87ccd3.netlify.app/'],
   }),
 );
 
